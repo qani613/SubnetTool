@@ -14,7 +14,7 @@ This Python script is a versatile network tool that provides various functionali
 
 5. **Reverse DNS Lookup**: Retrieve the domain name associated with a given IP address.
 
-6. **IP Address Geolocation**: Fetch geolocation data for an IP address, including country, city, organization, ISP, and time zone information.
+6. **IP Address Geolocation**: Fetch geolocation data for an IP address, including country, city, organization, ISP, and time zone information. **Note**: To use this functionality, you need to obtain an API key from [IPGeolocation](https://ipgeolocation.io/).
 
 7. **Network Port Scanning**: Scan open ports on a specified IP address or range of IP addresses.
 
@@ -31,40 +31,17 @@ This Python script is a versatile network tool that provides various functionali
 - Python 3.x
 - Required Python libraries: `ipaddress`, `socket`, `requests`
 
+## IP Address Geolocation API Key
+
+To use the IP address geolocation functionality (#6), you need to obtain an API key from [IPGeolocation](https://ipgeolocation.io/). Follow these steps to get an API key:
+
+1. Visit [IPGeolocation website](https://ipgeolocation.io/) and sign up for an account.
+2. After signing up, navigate to your account dashboard.
+3. Locate the API key section and generate an API key for the IP Geolocation service.
+4. Copy the API key and replace the placeholder `API-KEY HERE` in the `network_tool.py` script with your actual API key.
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 Feel free to explore the different functionalities of this network tool and adapt it to suit your specific needs!
-# SubnetTool
-
-SubnetTool is a Python script that provides functionalities for subnetting, decimal to binary conversion, binary to decimal conversion, and calculating the number of subnets and hosts for a given subnet mask.
-
-## Features
-
-- Subnetting: Split a given network IP into multiple subnets with specified subnet masks.
-- Decimal to Binary: Convert decimal numbers to binary representation.
-- Binary to Decimal: Convert binary numbers to decimal representation.
-- Calculate Subnets and Hosts: Determine the number of subnets and hosts that can be created for a given subnet mask.
-
-## Usage
-
-1. Subnetting: Enter the network IP, subnet mask, and the number of desired subnets. The script will calculate and display the subnet details for each subnet. You can also save the subnet details to a text file for future reference.
-
-2. Decimal to Binary: Enter a decimal number. The script will convert it to binary and display the binary representation.
-
-3. Binary to Decimal: Enter a binary number. The script will convert it to decimal and display the decimal representation.
-
-4. Calculate Subnets and Hosts: Enter the subnet mask. The script will calculate and display the number of subnets and hosts that can be created with that subnet mask.
-
-## Getting Started
-
-To get started with SubnetTool, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/qani613/network_tool.py`
-2. Navigate to the project directory: `cd NetworkTool`
-3. Run the script: `network_tool.py`
-
-
-
-This project is licensed under the [MIT License](LICENSE).
